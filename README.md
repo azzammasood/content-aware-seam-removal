@@ -5,23 +5,23 @@ Modified Abdullah’s code to add Photoshop’s Content-Aware-Fill as a mode of 
 
 The code contains two kinds of Content-Aware-Fill. 
 
-Using a single patch around seam (-mode ps-single)
+    Using a single patch around seam (-mode ps-single)
 
-Using multiple matches around seam (-mode ps-multi)
+    Using multiple matches around seam (-mode ps-multi)
 
 The context selected by Photoshop can change between three settings: 
 
-Auto (-type auto) 
+    Auto (-type auto) 
 
-Rectangle (-type rectangle)
+    Rectangle (-type rectangle)
 
-Custom (-type custom)
+    Custom (-type custom)
 
 Further settings include:
 
-Color Adaptation (none, default, high, very high)
+    Color Adaptation (none, default, high, very high)
 
-Rotation Adaptation (low, medium, high, very high, full)
+    Rotation Adaptation (low, medium, high, very high, full)
 
 Results using single patch over entire seam are good. On an 8k albedo, a patch of height 2000 and seam height of 600 with ‘auto’ context, ‘none’ color adaptation and ‘high’ rotation adaptation, the result is attached in the file ‘after seam removal using multiple patches.jpg'. The original image is also attached.
 
