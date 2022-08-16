@@ -29,4 +29,9 @@ Results using multiple patches are not good as using a single patch. On an 8k al
 
 An example command to run the python file with photoshop’s content-aware fill is:
 
-python seam-removal-ps.py -i wgxjfiaaw_8K_Displacement.jpg -o outputs -mode ps-single -type auto -col none -rot high -seam_h 600 -hi 2000
+    python seam-removal-ps.py -i wgxjfiaaw_8K_Displacement.jpg -o outputs -mode ps-single -type auto -col none -rot high -seam_h 600 -hi 2000
+    
+Photoshop's Content-Aware-Fill uses a Randomized Correspondence algorithm for Image Completion (Inpainting).
+(a) Initialization: Random initial guesses for the patch correspondences and iteratively improve results.
+(b) Propagation: Algorithm alternates between propagating good correspondences between neighboring patches and sampling nearby image space to find better correspondences.
+Although initialization is completely random, a few lucky guesses propagate quickly to neighboring pixels in the propagation phase. Random sampling complements this greedy approach by avoiding local minima.
