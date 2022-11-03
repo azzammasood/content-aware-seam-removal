@@ -1,8 +1,6 @@
 # content-aware-seam-removal
 Inpainting solution of seam removal using Photoshop
 
-Modified Abdullah’s code to add Photoshop’s Content-Aware-Fill as a mode of seam removal.
-
 The code contains two kinds of Content-Aware-Fill. 
 
     Using a single patch around seam (-mode ps-single)
